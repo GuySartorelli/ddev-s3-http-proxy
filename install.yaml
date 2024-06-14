@@ -5,7 +5,6 @@ project_files:
 - nginx/s3-http-proxy.conf
 global_files:
 dependencies:
-- nginx
 post_install_actions:
 removal_actions:
 yaml_read_files:
