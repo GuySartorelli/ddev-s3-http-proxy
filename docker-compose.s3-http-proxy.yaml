@@ -3,9 +3,8 @@ services:
   s3-http-proxy:
     container_name: ddev-${DDEV_SITENAME}-s3-http-proxy
     image: codemonauts/s3-http-proxy
-    command: tail -f /dev/null
     networks: [default, ddev_default]
-    restart: "yes"
+    restart: "always"
     # These labels ensure this service is discoverable by ddev.
     labels:
       com.ddev.site-name: ${DDEV_SITENAME}
